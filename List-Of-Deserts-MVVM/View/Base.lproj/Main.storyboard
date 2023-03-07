@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-Q9-Igu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-Q9-Igu">
                                                     <rect key="frame" x="10" y="10" width="190" height="152"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="190" id="oka-cR-Ipo"/>
@@ -58,6 +58,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kUq-nz-tY2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="By7-m1-T9v"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -69,6 +73,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3a0-xZ-y4X" secondAttribute="trailing" id="vl7-eQ-YfJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="3a0-xZ-y4X" id="UeC-As-GW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +83,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="d1" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
